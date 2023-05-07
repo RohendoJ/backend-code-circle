@@ -3,35 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	john := 80
+	tahun := 2003
 
-	if john >= 80 {	
-		fmt.Print("john A ")
-	} else if john >= 70 && john < 80 {
-		fmt.Print("john B ")
-	} else if john >= 60 && john < 70 {
-		fmt.Print("john C ")
-	} else if john >= 50 && john < 60 {
-		fmt.Print("john D ")
-	} else if john < 50 {
-		fmt.Print("john E ")
+	if tahun >= 1944 && tahun <= 1964 {
+		fmt.Print("boomer")
+	} else if tahun >= 1965 && tahun <= 1979 {
+		fmt.Print("Generasi X")
+	} else if tahun >= 1980 && tahun <= 1994 {
+		fmt.Print("Generasi Y")
+	} else if tahun >= 1995 && tahun <= 2015 {
+		fmt.Print("Generasi Z")
 	} else {
-		fmt.Print("ulang")
-	}
-	
-	doe := 50
-
-	if doe >= 80 {	 
-		fmt.Print("doe A ")
-	} else if doe >= 70 && doe < 80 {
-		fmt.Print("doe B ")
-	} else if doe >= 60 && doe < 70 {
-		fmt.Print("doe C ")
-	} else if doe >= 50 && doe < 60 {
-		fmt.Print("doe D ")
-	} else if doe < 50 {
-		fmt.Print("doe E ")
-	} else {
-		fmt.Print("ulang")
+		fmt.Print("-")
 	}
 }

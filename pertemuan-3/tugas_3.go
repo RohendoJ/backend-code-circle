@@ -2,17 +2,39 @@ package main
 
 import "fmt"
 
-func main() {	
-	rectangleLength := 8
-	rectangleWidth := 5
+func main() {
+	tanggal := 4
+	bulan := 6
+	tahun := 2003
 
-	triangleBase := 6.0
-	triangleHeight := 7.0
+	fmt.Print(tanggal)
 
-	rectanglePerimeter := 2 * (rectangleLength + rectangleWidth)
+	switch bulan {
+	case 1:
+		fmt.Print("Januari")
+	case 2:
+		fmt.Print("Februari")
+	case 3:
+		fmt.Print("Maret")
+	case 4:
+		fmt.Print("April")
+	case 5:
+		fmt.Print("Mei")
+	case 6:
+		fmt.Print("Juni")
+	case 7:
+		fmt.Print("Juli")
+	case 8:
+		fmt.Print("Agustus")
+	case 9:
+		fmt.Print("September")
+	case 10:
+		fmt.Print("Oktober")
+	case 11:
+		fmt.Print("November")
+	case 12:
+		fmt.Print("Desember")
+	}
 
-	triangleArea := 0.5 * triangleBase * triangleHeight	
-
-	fmt.Println("Perimeter of rectangle:", rectanglePerimeter)
-	fmt.Println("Area of triangle:", triangleArea)
+	fmt.Print(tahun)
 }
